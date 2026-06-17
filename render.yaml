@@ -1,12 +1,11 @@
-services:
-  # The PostgreSQL Database
-  - type: psql
-    name: ecommerce-db
+databases:
+  - name: ecommerce-db
     plan: free
     region: ohio
     databaseName: ecommerce
     user: ecommerce_user
 
+services:
   # The FastAPI Backend
   - type: web
     name: ecommerce-backend
